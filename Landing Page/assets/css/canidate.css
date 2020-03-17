@@ -12,8 +12,8 @@
 
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
-		padding: 10px;
-		padding-top:10px;
+		padding: 0;
+		padding-top:0;
 		border: 0;
 		font-size: 100%;
 		font: inherit;
@@ -21,9 +21,11 @@
 	}
     img {
         width: 250px; /* You can set the dimensions to whatever you want */
-        height: 250px;
+		height: 250px;
 		object-fit: cover;
 		align-items: center;
+		border-radius: 50%;
+
     }
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
@@ -1760,13 +1762,14 @@
 	}
 
 	.align-center {
-		text-align: center;
+		text-align: center
 	}
 
 	.align-right {
 		text-align: right;
 	}
 
+	
 	.inner {
 		max-width: 75em;
 		margin: 0 auto;
@@ -2895,7 +2898,6 @@
 			right: 0;
 			text-align: right;
 			top: 0;
-			vertical-align: middle;
 			width: 5em;
 		}
 
@@ -2952,7 +2954,7 @@
 		}
 
 		#banner h1 {
-			font-size: 3.5em;
+			font-size: 6.5em;
 			font-weight: 400;
 			color: #fff;
 			line-height: 1em;
@@ -2972,8 +2974,17 @@
 			font-size: 2em;
 		}
 
+		#f1{
+			color: #00acee;
+			font-size: 4em;
+		}
+		/* #banner .flex a {
+			color: #00acee;
+			font-size: 5em;
+		} */
+
 		#banner p {
-			font-size: 1em;
+			font-size: 1.5em;
 			color: rgba(255, 255, 255, 0.55);
 			margin-bottom: 1.75em;
 		}
@@ -2986,16 +2997,20 @@
 			justify-content: center;
 			text-align: center;
 			margin: 0 auto 4em auto;
+			
+			
 		}
 
 			#banner .flex div {
 				border-right: 2px solid rgba(255, 255, 255, 0.2);
 				padding: 0 8em;
+				
 			}
 
 				#banner .flex div:last-child {
 					border: none;
 					padding-right: 0;
+					
 				}
 
 				#banner .flex div:first-child {
@@ -3118,10 +3133,18 @@
 /* Footer */
 
 	#footer {
-		padding: 6em 0;
-		background: #6cc091;
-		color: #fff;
+		/* padding: 6em 0;
+		background: url(../../images/ActBlue.png);
+		text-align: center; */
+
+		padding: 8em 0 9em 0;
+		background: url(../../images/ActBlue.png);
+		background-size: contain;
+		/* background-position: bottom; */
+		background-attachment: relative;
+		background-repeat: no-repeat;
 		text-align: center;
+		position: relative;
 	}
 
 		#footer h3 {
