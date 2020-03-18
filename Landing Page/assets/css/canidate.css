@@ -2527,6 +2527,7 @@
 	input[type="reset"],
 	input[type="button"],
 	button,
+
 	.button {
 		-moz-appearance: none;
 		-webkit-appearance: none;
@@ -2555,6 +2556,7 @@
 		white-space: nowrap;
 	}
 
+	
 		input[type="submit"]:hover,
 		input[type="reset"]:hover,
 		input[type="button"]:hover,
@@ -2701,6 +2703,186 @@
 
 		}
 
+		.button2 {
+			-moz-appearance: none;
+			-webkit-appearance: none;
+			-ms-appearance: none;
+			appearance: none;
+			-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+			-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+			-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+			transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+			background-color: transparent;
+			box-shadow: inset 0 0 0 3px #00acee;
+			color: #00acee !important;
+			border-radius: 30px;
+			border: 0;
+			cursor: pointer;
+			display: inline-block;
+			font-size: .75em;
+			font-weight: 400;
+			height: 3.75em;
+			line-height: 3.85em;
+			letter-spacing: 2px;
+			padding: 0 4em;
+			text-align: center;
+			text-decoration: none;
+			text-transform: uppercase;
+			white-space: nowrap;
+		}
+	
+		
+			input[type="submit"]:hover,
+			input[type="reset"]:hover,
+			input[type="button"]:hover,
+			button2:hover,
+			.button2:hover {
+				background-color: rgba(108, 192, 145, 0.15);
+			}
+	
+			input[type="submit"]:active,
+			input[type="reset"]:active,
+			input[type="button"]:active,
+			button2:active,
+			.button2:active {
+				background-color: rgba(108, 192, 145, 0.15);
+			}
+	
+			input[type="submit"].icon,
+			input[type="reset"].icon,
+			input[type="button"].icon,
+			button2.icon,
+			.button2.icon {
+				padding-left: 1.35em;
+			}
+	
+				input[type="submit"].icon:before,
+				input[type="reset"].icon:before,
+				input[type="button"].icon:before,
+				button2.icon:before,
+				.button2.icon:before {
+					margin-right: 0.5em;
+				}
+	
+			input[type="submit"].fit,
+			input[type="reset"].fit,
+			input[type="button"].fit,
+			button2.fit,
+			.button2.fit {
+				display: block;
+				margin: 0 0 1em 0;
+				width: 100%;
+			}
+	
+			input[type="submit"].small,
+			input[type="reset"].small,
+			input[type="button"].small,
+			button2.small,
+			.button2.small {
+				font-size: 0.8em;
+			}
+	
+			input[type="submit"].big,
+			input[type="reset"].big,
+			input[type="button"].big,
+			button2.big,
+			.button2.big {
+				font-size: 1.35em;
+			}
+	
+			input[type="submit"].alt,
+			input[type="reset"].alt,
+			input[type="button"].alt,
+			button2.alt,
+			.button2.alt {
+				background-color: transparent;
+				box-shadow: inset 0 0 0 3px #FFF;
+				color: #fff !important;
+			}
+	
+				input[type="submit"].alt:hover,
+				input[type="reset"].alt:hover,
+				input[type="button"].alt:hover,
+				button2.alt:hover,
+				.button2.alt:hover {
+					background-color: #00acee;
+				}
+	
+				input[type="submit"].alt:active,
+				input[type="reset"].alt:active,
+				input[type="button"].alt:active,
+				button2.alt:active,
+				.button2.alt:active {
+					background-color: #00acee;
+				}
+	
+				input[type="submit"].alt.icon:before,
+				input[type="reset"].alt.icon:before,
+				input[type="button"].alt.icon:before,
+				button2.alt.icon:before,
+				.button2.alt.icon:before {
+					color: #bbb;
+				}
+	
+			input[type="submit"].special,
+			input[type="reset"].special,
+			input[type="button"].special,
+			button2.special,
+			.button2.special {
+				background-color: #00acee;
+				color: #ffffff !important;
+			}
+	
+				input[type="submit"].special:hover,
+				input[type="reset"].special:hover,
+				input[type="button"].special:hover,
+				button2.special:hover,
+				.button2.special:hover {
+					background-color: #00acee;
+				}
+	
+				input[type="submit"].special:active,
+				input[type="reset"].special:active,
+				input[type="button"].special:active,
+				button2.special:active,
+				.button2.special:active {
+					background-color: #00acee;
+				}
+	
+			input[type="submit"].disabled, input[type="submit"]:disabled,
+			input[type="reset"].disabled,
+			input[type="reset"]:disabled,
+			input[type="button"].disabled,
+			input[type="button"]:disabled,
+			button2.disabled,
+			button2:disabled,
+			.button2.disabled,
+			.button2:disabled {
+				background-color: #9a9a9a !important;
+				box-shadow: inset 0 -0.15em 0 0 rgba(0, 0, 0, 0.15);
+				color: #fff !important;
+				cursor: default;
+				opacity: 0.25;
+			}
+	
+			@media screen and (max-width: 480px) {
+	
+				input[type="submit"],
+				input[type="reset"],
+				input[type="button"],
+				button2,
+				.button2 {
+					padding: 0;
+					width: 100%;
+				}
+	
+			}
+
+		.btn-bot {
+			position: absolute;
+			bottom: 40px;
+	
+		  }
 /* Header */
 
 	.subpage {
@@ -3133,10 +3315,7 @@
 /* Footer */
 
 	#footer {
-		/* padding: 6em 0;
-		background: url(../../images/ActBlue.png);
-		text-align: center; */
-
+		
 		padding: 8em 0 9em 0;
 		background: url(../../images/ActBlue.png);
 		background-size: contain;
@@ -3146,6 +3325,7 @@
 		text-align: center;
 		position: relative;
 	}
+
 
 		#footer h3 {
 			color: #FFF;
