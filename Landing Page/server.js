@@ -1,27 +1,35 @@
-/*Resource: https://www.youtube.com/watch?v=_D2w0voFlEk*/
+const express = require('express');
+const path = require('path');
+const app = express();
 
-var http = require('http');
-const fs = require('fs') //for file handling
+//Resource: https://stackoverflow.com/questions/5924072/express-js-cant-get-my-static-files-why
+app.use('*/css',express.static(path.join(__dirname, 'assets/css')));
+app.use('*/fonts',express.static(path.join(__dirname, 'assets/fonts')));
+app.use('*/js',express.static(path.join(__dirname, 'assets/js')));
 
-//404 response
-function send404Response(response){
-    response.writeHead(404, {"Content-Type": "text/plain"});
-    response.write("Error 404. Page not found!");
-    response.end;
-}
+app.set('view engine', 'ejs');
+app.use(express.static(__dirname + '/'));
 
-//Handle a user request
-function onRequest(request, response){
-    if(request.method == 'GET' && request.url == '/'){
-      response.writeHead(200, {"Content-Type": "text/html"});
-      console.log("finding homepage");
-      fs.createReadStream("home.html").pipe(response);
-      console.log("homepage was found and successfully loaded"); //For me, it seems to be struggling to load in all the images and assets.
-    }
-    else{
-      send404Response(response);
-    }
-}
-http.createServer(onRequest).listen(2020); //request Listener. listen(port_number)
+app.get('/', function(req, res){
+  res.sendFile(path.join(__dirname, '/home.html'));
+})
+
+//Unclear if I need all these right now. The html files seem to be connected and loading in properly now
+/*
+app.get('/home', function(req, res){
+  res.sendFile(path.join(__dirname, '/home.html'));
+})
+app.get('/candidate_info', function(req, res){
+	res.sendFile(path.join(__dirname, '/candidate_info.html'));
+});
+app.get('/polls', function(req, res){
+	res.sendFile(path.join(__dirname, '/polls.html'));
+});
+app.get('/events', function(req, res){
+	res.sendFile(path.join(__dirname, '/events.html'));
+});
+*/
+
+app.listen(2020);
 console.log("Server is now running....");
 console.log("Port is 2020");
