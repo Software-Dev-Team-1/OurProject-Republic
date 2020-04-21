@@ -28,6 +28,9 @@ app.get('/polls', function(req, res){
 app.get('/events', function(req, res){
 	res.sendFile(path.join(__dirname, '/events.html'));
 });
+app.get('/votes', function(req, res){
+	res.sendFile(path.join(__dirname, '/votes.html'));
+});
 */
 
 app.listen(2020);
