@@ -9,7 +9,7 @@
 -->
 <html>
 	<head>
-		<title>Log In</title>
+		<title>Sign Up</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="../../resources/css/main.css" />
@@ -44,59 +44,40 @@
         <!-- Banner -->
 				<section id="banner">
 						<div class="inner">
-								<div>
-										<h1 style="font-family:Helvetica;">Log In</h1>
-								</div>
+								
 								<div class="flex row">
 
 										<article>
-											<img src="../../resources/images/ivoted.jpg" alt="regvoters" />
-											<h2>Registered Voters</h2>
-											<form action="action_page.php" method="post">
-												
-												<div style="text-align:left; padding: 20px; align-items:center;">
-												  <label for="uname"><b style="color: white;">Username</b></label>
-												  <input type="text" placeholder="Enter Username" name="uname" required>
+											<img src="../../resources/images/signup.png" alt="signup" />
+											<h2>Sign Up</h2>
+											<form action="action_page.php" style="border:none; ">
+												<div style="text-align:left; padding:20px; align-items:center; max-width: 600px;">
+											
+												  <p>Please fill in this form to create an account.</p>
+												  <hr>
 											  
-												  <label for="psw"><b style="color: white;">Password</b></label>
-												  <input type="password"  placeholder="Enter Password" name="psw" required>
+												  <label for="email" ><b style="color: white;">Email</b></label>
+												  <input type="text" placeholder="Enter Email" name="email" required>
 											  
-												  <!-- <button class="btn" style="color: white;"type="submit">Login</button> -->
+												  <label for="psw" ><b style="color: white;">Password</b></label>
+												  <input type="password" placeholder="Enter Password" name="psw" required>
+											  
+												  <label for="psw-repeat"> <b style="color: white;">Repeat Password</b></label>
+												  <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+											  
+									
+												  <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+											  
 												  <button class="btn" type="submit" ><i class="fas fa-sign-in-alt"></i></button>
+												
 												  
 												</div>
-												
 											  </form>
 
-                                            <footer>
+                                            
+										</article>
+
 										
-												<a href="SignUp.html"><h5 style="color: white;">Don't have an account, Sign Up</h5></a>
-											</footer>
-
-										</article>
-
-										<article>
-												
-											<img src="../../resources/images/delegate.jpg" alt="delegate" />
-					
-											<h2>Registered Delegates</h2>
-											<form action="action_page.php" method="post">
-												
-												<div style="text-align:left; padding: 20px; align-items:center;">
-												  <label for="uname"><b style="color: white;">Username</b></label>
-												  <input type="text" placeholder="Enter Username" name="uname" required>
-											  
-												  <label for="psw"><b style="color: white;">Password</b></label>
-												  <input type="password"  placeholder="Enter Password" name="psw" required>
-											  
-												  <!-- <button class="btn" style="color: white;"type="submit">Login</button> -->
-												  <button class="btn" type="submit" ><i class="fas fa-sign-in-alt"></i></button>
-												  
-												</div>
-												
-											  </form>
-
-										</article>
 								</div>
 
 
