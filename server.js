@@ -11,7 +11,7 @@ app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '/'));
 
 app.get('/', function(req, res){
-  res.sendFile(path.join(__dirname, '/home.html'));
+  res.sendFile(path.join(__dirname, 'views/pages/home.html'));
 })
 
 //Unclear if I need all these right now. The html files seem to be connected and loading in properly now
@@ -30,6 +30,6 @@ app.get('/events', function(req, res){
 });
 */
 
-app.listen(2020);
+app.listen(3000);
 console.log("Server is now running....");
-console.log("Port is 2020");
+console.log("Port is 3000");
