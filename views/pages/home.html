@@ -14,7 +14,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="../../resources/css/main.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 		<script src="https://kit.fontawesome.com/9ff6827ca3.js" crossorigin="anonymous"></script>
 <!-- Header -->
 	<!-- <header id="header"> -->
@@ -28,15 +28,11 @@
 		<!-- Header -->
 			<header id="header">
 				<div class="inner">
-					<a href="home.html" class="logo">Republic</a>
+					<a href="/views/pages/home.html" class="logo">Republic</a>
 					<nav id="nav">
-						<a href="events.html">Events</a>
-						<a href="candidate_info.html">Candidates</a>
+						<a href="/views/pages/login.html">Login/SignUp</a>
+						<a href="/views/pages/events.html">Events</a>
 						
-						<a href="#" class="fa fa-facebook"></a>
-						<a href="#" class="fa fa-twitter"></a>
-						<a href="#" class="fa fa-google"></a>
-						<a href="#" class="fa fa-instagram"></a>
 					</nav>
 				</div>
 			</header>
@@ -49,24 +45,39 @@
 								</div>
 								<div class="flex row">
 
-										<article>
+									<article>
 											
-											<a href="login.html" ><img src="../../resources/images/votebox.jpg" alt="voters" /></a>
+										<a href="/views/pages/canidate_info" ><img src="../../resources/images/canidates.jpeg" alt="candidates" /></a>
+										 
+										<h2>Candidates</h2>
+										
+										<!-- <img src="../../resources/images/votebox.jpg" alt="voters" /> -->
+										
+									<!-- <footer>
+										<button href="login.html" class="btn fill"><i class="fas fa-person-booth"></i></button>
+									
+									</footer> -->
+
+									</article>
+
+										<!-- <article>
+											
+											<a href="/views/pages/login.php" ><img src="../../resources/images/votebox.jpg" alt="voters" /></a>
 											 
 											<h2>Voters</h2>
 											
-											<!-- <img src="../../resources/images/votebox.jpg" alt="voters" /> -->
+											<img src="../../resources/images/votebox.jpg" alt="voters" /> 
 											
-										<!-- <footer>
+										<footer>
 											<button href="login.html" class="btn fill"><i class="fas fa-person-booth"></i></button>
 										
-										</footer> -->
+										</footer> 
 
-										</article>
+										</article> -->
 
 										<article>
 											
-											<a href="polls.html" ><img src="../../resources/images/polls.png" alt="polls" /></a>
+											<a href="/views/pages/polls.html" ><img src="../../resources/images/polls.png" alt="polls" /></a>
 											<h2>Polls</h2>
 											<!-- <img src="../../resources/images/polls.png" alt="polls" /> -->
 												
@@ -92,7 +103,17 @@
 
 
 						</div>
+
+						<div class="flex row" style="align-items: center; justify-content: center; position: absolute; bottom: 0">
+							<a href="#" class="fa fa-facebook"></a>
+							<a href="#" class="fa fa-twitter"></a>
+							<a href="#" class="fa fa-google"></a>
+							<a href="#" class="fa fa-instagram"></a>
+						</div>
 				</section>
+
+				
+		
 
 		<!-- Scripts -->
 			<script src="../../resources/js/jquery.min.js"></script>

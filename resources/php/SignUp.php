@@ -16,6 +16,53 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> -->
 		<script src="https://kit.fontawesome.com/9ff6827ca3.js" crossorigin="anonymous"></script>
+		<script language="javascript">
+function check()
+{
+
+ 
+ if(document.form1.pass.value=="")
+  {
+    alert("Plese Enter Your Password");
+	document.form1.pass.focus();
+	return false;
+  } 
+  if(document.form1.cpass.value=="")
+  {
+    alert("Plese Enter Confirm Password");
+	document.form1.cpass.focus();
+	return false;
+  }
+  if(document.form1.pass.value!=document.form1.cpass.value)
+  {
+    alert("Confirm Password does not matched");
+	document.form1.cpass.focus();
+	return false;
+  }
+  
+  if(document.form1.email.value=="")
+  {
+    alert("Plese Enter your Email Address");
+	document.form1.email.focus();
+	return false;
+  }
+  e=document.form1.email.value;
+		f1=e.indexOf('@');
+		f2=e.indexOf('@',f1+1);
+		e1=e.indexOf('.');
+		e2=e.indexOf('.',e1+1);
+		n=e.length;
+
+		if(!(f1>0 && f2==-1 && e1>0 && e2==-1 && f1!=e1+1 && e1!=f1+1 && f1!=n-1 && e1!=n-1))
+		{
+			alert("Please Enter valid Email");
+			document.form1.email.focus();
+			return false;
+		}
+  return true;
+  }
+  
+</script>
 <!-- Header -->
 	<!-- <header id="header"> -->
 		<!-- <div class="inner"> -->
@@ -50,7 +97,7 @@
 										<article>
 											<img src="../../resources/images/signup.png" alt="signup" />
 											<h2>Sign Up</h2>
-											<form action="action_page.php" style="border:none; ">
+											<form name="form1" method="post" action="signupuser.php" style="border:none;" onSubmit="return check();">
 												<div style="text-align:left; padding:20px; align-items:center; max-width: 600px;">
 											
 												  <p>Please fill in this form to create an account.</p>
@@ -68,7 +115,7 @@
 									
 												  <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
 											  
-												  <button class="btn" type="submit" ><i class="fas fa-sign-in-alt"></i></button>
+												  <button class="btn" type="submit" name="submit" value="submit"><i class="fas fa-sign-in-alt"></i></button>
 												
 												  
 												</div>

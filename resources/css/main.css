@@ -3426,9 +3426,9 @@ form {
 	#footer {
 		
 		padding: 8em 0 9em 0;
-		background: url(../images/ActBlue.png);
+		background: relative;
 		background-size: contain;
-		/* background-position: bottom; */
+		background-position: bottom;
 		background-attachment: relative;
 		background-repeat: no-repeat;
 		text-align: center;
