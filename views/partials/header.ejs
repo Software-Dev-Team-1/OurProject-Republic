@@ -1,0 +1,43 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>iVMS</title>
+    <link rel="stylesheet" href="Project/OurProject-Republic/stylesheets/materialize.css" />
+  </head>
+  <body>
+    <div class="container">  -->
+
+
+      <!doctype html>
+      <html lang="en">
+        <head>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+          <meta name="description" content="">
+
+          <!-- Header -->
+        <header id="header">
+          <div class="inner">
+            <a href="home" class="logo">Republic</a>
+            <nav id="nav">
+              <p class="lead mb-3">Welcome <%= user.name %></p> 
+               <a href="events">Events</a>
+              
+            </nav>
+          </div>
+        </header>
+
+        <link rel='icon' href='../resources/img/favicon.ico' type='image/x-icon'/> -->
+          <!-- Bootstrap core CSS -->
+        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">-->
+        <% if(typeof local_css == 'string' && local_css){ %>
+         <link href="../public/stylesheets/<%=local_css%>" rel="stylesheet">
+        <% } %> 
+          <!-- Custom styles for this template -->
+        <link href="../public/stylesheets/main.css" rel="stylesheet">
+        
+        </head>
+        <body>
