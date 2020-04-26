@@ -1773,14 +1773,14 @@
 
 	
 	.inner {
-		max-width: 75em;
-		margin: 0 auto;
+		margin: 0;
+		padding: 0;
 	}
 
 		@media screen and (max-width: 1280px) {
 
 			.inner {
-				max-width: 90%;
+				max-width: 100%;
 			}
 
 		}
@@ -1788,7 +1788,7 @@
 		@media screen and (max-width: 480px) {
 
 			.inner {
-				max-width: 90%;
+				max-width: 100%;
 			}
 
 		}
@@ -3208,7 +3208,9 @@ form {
 /* Banner */
 
 	#banner {
-		padding: 8em 0 9em 0;
+		margin: 0;
+		padding: 0;
+		/* padding: 8em 0 9em 0; */
 		background-image: url(../images/DemBackground.png);
 		background-size: cover;
 		background-position: bottom;
@@ -3229,6 +3231,8 @@ form {
 		}
 
 		#banner .inner {
+			margin: 0;
+			padding: 0;
 			border-top: 2px solid rgba(255, 255, 255, 0.2);
 			position: relative;
 			z-index: 10005;
@@ -3335,7 +3339,8 @@ form {
 			}
 
 				#banner .inner {
-					padding-top: 6em;
+					margin: 0;
+					padding: 0;
 				}
 
 				#banner h1 {
@@ -3360,7 +3365,8 @@ form {
 			}
 
 				#banner .inner {
-					padding-top: 4em;
+					margin: 0;
+					padding: 0;
 				}
 
 				#banner h1 {
@@ -3385,7 +3391,8 @@ form {
 			}
 
 				#banner .inner {
-					padding-top: 3em;
+					margin: 0;
+					padding: 0;
 				}
 
 				#banner h1 {

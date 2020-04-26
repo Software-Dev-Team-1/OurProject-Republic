@@ -3,28 +3,37 @@ const router = express.Router();
 const { ensureAuthenticated, forwardAuthenticated } = require('../config/auth');
 
 // Welcome Page
-router.get('/', forwardAuthenticated, (req, res) => res.render('welcome'));  //initial
-//router.get('/', forwardAuthenticated, (req, res) => res.render('home'));
+router.get('/', forwardAuthenticated, (req, res) => res.render('welcome',{
+    my_title: 'Login',
+    local_css:"main.css"
+  })
+);  //initial
 
 
 // Dashboard
 router.get('/dashboard', ensureAuthenticated, (req, res) =>
   res.render('dashboard', {
-    user: req.user
+    user: req.user,
+    my_title: 'Home',
+    local_css:"main.css"
   })
 );
 
 // Candidates
 router.get('/candidate_info', ensureAuthenticated, (req, res) =>
   res.render('candidate_info', {
-    user: req.user
+    user: req.user,
+    my_title: 'Candidates',
+    local_css:"candidate.css"
   })
 );
 
 //Polls
 router.get('/polls', ensureAuthenticated, (req, res) =>
   res.render('polls', {
-    user: req.user
+    user: req.user,
+    my_title: 'Polls',
+    local_css:"main.css"
   })
 );
 
