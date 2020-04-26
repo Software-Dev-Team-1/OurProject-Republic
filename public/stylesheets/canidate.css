@@ -3345,7 +3345,7 @@
 	#footer {
 		
 		padding: 8em 0 9em 0;
-		background: url(../images/ActBlue.png);
+		background: url(../public/images/ActBlue.png);
 		background-size: contain;
 		/* background-position: bottom; */
 		background-attachment: relative;
