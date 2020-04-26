@@ -1,10 +1,9 @@
 <% include partials/header %>
 <% include partials/menu %>
 
-  <br> 
+  <br>
 	<br>
 	<div class="container">
-		<form action="home.html">
       <table class="table table-responsive" style="width:100%">
         <h2> Select the Candidate of your choice </h2>
      <thead>
@@ -14,7 +13,7 @@
          </tr>
      </thead>
      <tbody>
-     <form>
+     <form method="POST" action="/post-votes">
          <tr>
              <td>
                  <div class="radio">
@@ -90,9 +89,9 @@
          </form>
          </tbody>
        </table>
-			<input type="submit" value="submit" class="btn btn-primary btn-block">
+			<input type="submit" value="submit" onclick="location.href='home.ejs'" class="btn btn-primary btn-block">
 		</form>
 		<br>
 	</div>
-	
+
 <% include partials/footer %>
