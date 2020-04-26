@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<!--
+	Projection by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+
+	Group 101-1
+
+-->
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/canidate.css" />
+		<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+		<title>Live Polls</title>
+
+	</head>
+	<body>
+		<div class="container">
+			<canvas id="PollChart"></canvas>
+		</div>
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="home.html" class="logo">Main Page</a>
+					<nav id="nav">
+						<a href="events.html">Events</a>
+						<a href="candidates.html">Candidates</a>
+					</nav>
+					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+				</div>
+			</header>
+
+        <!-- Banner -->
+			<style>	<div style="background-image: url('images/democratic-party.jpg')></style>
+
+		<!-- Scripts -->
+		<script>
+			let PollChart = document.getElementById('PollChart').getContext('2d');
+
+			let barChart = new Chart(PollChart, {
+				type: 'horizontalBar', // horizontal bar
+				data:{
+					labels:['Bernie Sanders','Joe Biden','Elizabeth Warren','Mike Bloomberg','Pete Buttigieg','Amy Klobuchar'],
+					dataset:[
+						label:'Votes',
+						data:[10022,513223,2234,3123,11,888888]//Dummy Data Before integration with database
+					]
+					backgroundColor:'red'
+				},
+				options:{
+
+				}
+			});
+		</script>
+
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
