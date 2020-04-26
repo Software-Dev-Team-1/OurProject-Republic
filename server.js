@@ -1,11 +1,11 @@
-var createError= require('http-errors');
-const express = require('express');
+var createError= require('./node_modules/http-errors');
+const express = require('./node_modules/express');
 const path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
-var session = require('express-session');
-var passport = require('passport');
-var OidcStrategy = require('passport-openidconnect').Strategy;
+var cookieParser = require('./node_modules/cookie-parser');
+var logger = require('./node_modules/morgan');
+var session = require('./node_modules/express-session');
+var passport = require('./node_modules/passport/lib');
+var OidcStrategy = require('./node_modules/passport-openidconnect').Strategy;
 
 const app = express();
 const router= express.Router();

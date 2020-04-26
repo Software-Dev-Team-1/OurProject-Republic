@@ -14,4 +14,18 @@ router.get('/dashboard', ensureAuthenticated, (req, res) =>
   })
 );
 
+// Candidates
+router.get('/candidate_info', ensureAuthenticated, (req, res) =>
+  res.render('candidate_info', {
+    user: req.user
+  })
+);
+
+//Polls
+router.get('/polls', ensureAuthenticated, (req, res) =>
+  res.render('polls', {
+    user: req.user
+  })
+);
+
 module.exports = router;

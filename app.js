@@ -27,10 +27,6 @@ app.use(expressLayouts);
 app.set('view engine', 'ejs');
 //app.set('views', path.join(__dirname, 'views'));
 
-app.get('/', function(req, res) {
-	res.render('pages/candidates_info',{
-	});
-});
 
 //Static
 app.use(express.static(__dirname + '/'));
