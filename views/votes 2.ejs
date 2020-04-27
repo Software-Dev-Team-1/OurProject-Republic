@@ -1,0 +1,97 @@
+<% include partials/header %>
+<% include partials/menu %>
+
+  <br>
+	<br>
+	<div class="container">
+      <table class="table table-responsive" style="width:100%">
+        <h2> Select the Candidate of your choice </h2>
+     <thead>
+         <tr>
+             <th>Candidate</th>
+             <th></th>
+         </tr>
+     </thead>
+     <tbody>
+     <form method="POST" action="/post-votes">
+         <tr>
+             <td>
+                 <div class="radio">
+                     <label><input type="radio" id='mike_bloomberg' name="optradio"> Mike Bloomberg</label>
+                 </div>
+             </td>
+             <td>
+             <div class="radiotext">
+                <img src="../public/images/MikeBloomberg.jpg" alt="MikeBloomberg" class="rounded-circle" style="width:80px;height:80px;">
+             </div>
+             </td>
+         </tr>
+         <tr>
+             <td>
+                 <div class="radio">
+                     <label><input type="radio" id='joe_biden' name="optradio"> Joe Biden</label>
+                </div>
+             </td>
+             <td>
+                 <div class="radiotext">
+                    <img src="../public/images/JoeBiden.jpeg" alt="JoeBiden" class="rounded-circle" style="width:80px;height:80px;">
+                 </div>
+             </td>
+         </tr>
+         <tr>
+             <td>
+                 <div class="radio">
+                     <label><input type="radio" id='pete_buttigieg' name="optradio"> Pete Buttigieg</label>
+                </div>
+             </td>
+             <td>
+                 <div class="radiotext">
+                    <img src="../public/images/PeteButtigieg.jpeg" alt="PeteButtigieg" class="rounded-circle" style="width:80px;height:80px;">
+                 </div>
+             </td>
+         </tr>
+         <tr>
+             <td>
+                 <div class="radio">
+                     <label><input type="radio" id='amy_klobuchar' name="optradio"> Amy Klobuchar</label>
+                </div>
+             </td>
+             <td>
+                 <div class="radiotext">
+                    <img src="../public/images/AmyKlobuchar.jpg" alt="AmyKlobuchar" class="rounded-circle" style="width:80px;height:80px;">
+                 </div>
+             </td>
+         </tr>
+         <tr>
+             <td>
+                 <div class="radio">
+                     <label><input type="radio" id='bernie_sanders' name="optradio"> Bernie Sanders</label>
+                </div>
+             </td>
+             <td>
+                 <div class="radiotext">
+                   <img src="../public/images/BernieSanders.png" alt="BernieSanders" class="rounded-circle" style="width:80px;height:80px;">
+                 </div>
+             </td>
+         </tr>
+         <tr>
+             <td>
+                 <div class="radio">
+                     <label><input type="radio" id='elizabeth_warren' name="optradio"> Elizabeth Warren</label>
+                </div>
+             </td>
+             <td>
+                 <div class="radiotext">
+                    <img src="../public/images/ElizabethWarren.jpeg" alt="ElizabethWarren" class="rounded-circle" style="width:80px;height:80px;">
+                 </div>
+             </td>
+         </tr>
+         </form>
+         </tbody>
+       </table>
+			<input type="submit" value="submit" onclick="location.href='home.ejs'" class="btn btn-primary btn-block">
+		</form>
+		<br>
+	</div>
+
+<% include partials/footer %>
