@@ -3211,7 +3211,7 @@ form {
 		margin: 0;
 		padding: 0;
 		/* padding: 8em 0 9em 0; */
-		background-image: url(../images/DemBackground.png);
+		/* background-image: url(../images/DemBackground.png); */
 		background-size: cover;
 		background-position: bottom;
 		background-attachment: fixed;
