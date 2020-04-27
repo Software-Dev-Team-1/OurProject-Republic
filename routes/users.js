@@ -100,4 +100,10 @@ router.get('/logout', (req, res) => {
   res.redirect('/users/login');
 });
 
+// app.get('/logout', function (req, res){
+//   req.session.destroy(function (err) {
+//     res.redirect('/users/login'); //Inside a callback… bulletproof!
+//   });
+// });
+
 module.exports = router;

@@ -3131,12 +3131,12 @@ form {
 		position: fixed;
 		right: 0;
 		top: 0;
-		background: #6cc091;
+		background: #1d42e6;
 		color: #daefe3;
 		height: 100%;
-		max-width: 80%;
+		max-width: 100%;
 		width: 20em;
-		padding: 0.5em 1.25em;
+		padding: 0;/* padding: 0.5em 1.25em; */
 		z-index: 10010;
 	}
 
@@ -3222,6 +3222,7 @@ form {
 
 		#banner:before {
 			content: '';
+			/* background-color: #1d42e6; */
 			background: rgba(75, 75, 93, 0.85);
 			position: absolute;
 			width: 100%;
