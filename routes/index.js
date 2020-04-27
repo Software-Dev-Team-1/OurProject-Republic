@@ -37,6 +37,7 @@ router.get('/polls', ensureAuthenticated, (req, res) =>
   })
 );
 
+//Votes
 router.get('/votes', ensureAuthenticated, (req, res) =>
   res.render('votes', {
     user: req.user,
@@ -44,5 +45,4 @@ router.get('/votes', ensureAuthenticated, (req, res) =>
     local_css:"main.css"
   })
 );
-
 module.exports = router;
