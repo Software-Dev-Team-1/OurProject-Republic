@@ -30,10 +30,7 @@ app.set('view engine', 'ejs');
 
 //Static
 app.use(express.static(__dirname + '/'));
-//app.use(express.static(path.join(__dirname, 'OurProject-Republic')));
-// app.use(express.static(__dirname + '/'));
-//app.use(express.static(__dirname + '/OurProject-Republic'));
-//app.use(express.static(path.join(__dirname, '/resources')));
+
 
 // Express body parser
 app.use(express.urlencoded({ extended: true }));

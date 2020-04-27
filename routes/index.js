@@ -45,4 +45,7 @@ router.get('/votes', ensureAuthenticated, (req, res) =>
     local_css:"main.css"
   })
 );
+
+//app.use(express.static(path.join(__dirname, 'OurProject-Republic/public')));
+
 module.exports = router;
