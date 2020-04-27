@@ -1,0 +1,138 @@
+<!-- <?php
+include("database.php");
+extract($_POST);
+
+if(isset($submit))
+{
+	$rs=pg_query($dbconn,"select * from user where email='$email and password='$psw'");
+	if(pg_num_rows($rs)<1)
+	{
+		$found="N";
+	}
+	else
+	{
+		$_SESSION["login"]=$email;
+	}
+}
+if (isset($_SESSION["login"]))
+{
+echo "<h1 align=center>Hye you are sucessfully login!!!</h1>";
+exit;
+}
+?> -->
+
+
+<!DOCTYPE HTML>
+<!--
+	Projection by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+
+	Group 101-1
+
+-->
+<html>
+	<head>
+		<title>Log In</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="../../resources/css/main.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> -->
+		<script src="https://kit.fontawesome.com/9ff6827ca3.js" crossorigin="anonymous"></script>
+<!-- Header -->
+	<!-- <header id="header"> -->
+		<!-- <div class="inner"> -->
+			
+		<!-- </div> -->
+	<!-- </header> -->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="home.html" class="logo">Republic</a>
+					<nav id="nav">
+						<a href="events.html">Events</a>
+						<a href="candidate_info.html">Candidates</a>
+						
+						<a href="#" class="fa fa-facebook"></a>
+						<a href="#" class="fa fa-twitter"></a>
+						<a href="#" class="fa fa-google"></a>
+						<a href="#" class="fa fa-instagram"></a>
+					</nav>
+				</div>
+			</header>
+
+        <!-- Banner -->
+				<section id="banner">
+						<div class="inner">
+								<div>
+										<h1 style="font-family:Helvetica;">Log In</h1>
+								</div>
+								<div class="flex row">
+
+										<article>
+											<img src="../../resources/images/ivoted.jpg" alt="regvoters" />
+											<h2>Registered Voters</h2>
+											<form action="action_page.php" method="post">
+												
+												<div style="text-align:left; padding: 20px; align-items:center;">
+
+												  <label for="email" ><b style="color: white;">Email</b></label>
+												  <input type="text" placeholder="Enter Email" name="email" required>
+											  
+												  <label for="psw"><b style="color: white;">Password</b></label>
+												  <input type="password"  placeholder="Enter Password" name="psw" required>
+											  
+												  <!-- <button class="btn" style="color: white;"type="submit">Login</button> -->
+												  <button class="btn" type="submit" ><i class="fas fa-sign-in-alt"></i></button>
+												  
+												</div>
+												
+											  </form>
+
+                                            <footer>
+										
+												<a href="SignUp.html"><h5 style="color: white;">Don't have an account, Sign Up</h5></a>
+											</footer>
+
+										</article>
+
+										<article>
+												
+											<img src="../../resources/images/delegate.jpg" alt="delegate" />
+					
+											<h2>Registered Delegates</h2>
+											<form action="action_page.php" method="post">
+												
+												<div style="text-align:left; padding: 20px; align-items:center;">
+												  <label for="uname"><b style="color: white;">Username</b></label>
+												  <input type="text" placeholder="Enter Username" name="uname" required>
+											  
+												  <label for="psw"><b style="color: white;">Password</b></label>
+												  <input type="password"  placeholder="Enter Password" name="psw" required>
+											  
+												  <!-- <button class="btn" style="color: white;"type="submit">Login</button> -->
+												  <button class="btn" type="submit" ><i class="fas fa-sign-in-alt"></i></button>
+												  
+												</div>
+												
+											  </form>
+
+										</article>
+								</div>
+
+
+						</div>
+				</section>
+
+		<!-- Scripts -->
+			<script src="../../resources/js/jquery.min.js"></script>
+			<script src="../../resources/js/skel.min.js/js/skel.min.js"></script>
+			<script src="../../resources/js/util.js"></script>
+			<script src="../../resources/js/main.js"></script>
+
+	</body>
+</html>

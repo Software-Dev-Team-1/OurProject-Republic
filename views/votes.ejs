@@ -1,0 +1,127 @@
+<!doctype html>
+  <html lang="en" >
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="">
+      <title><% my_title %></title>
+      
+    <!-- <link rel='icon' href='../resources/img/favicon.ico' type='image/x-icon'/>  -->
+      <!-- Bootstrap core CSS -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> -->
+    
+    <!-- Materialize styles for this template-->
+    <!-- <link href="../public/stylesheets/materialize.css" rel="stylesheet">  -->
+
+    <!-- Custom styles for this template-->
+    <!-- <% if(typeof local_css == 'string' && local_css){ %> -->
+      <!-- <link rel="stylesheet" type='text/css' href="../public/stylesheets/<%=local_css%>" > -->
+      <!-- <link rel="stylesheet" type='text/css' href="/stylesheets/<%=local_css%>" >  -->
+    <!-- <% } %>  -->
+
+    <link rel="stylesheet" type='text/css' href="../public/stylesheets/main.css" > 
+    <!-- <link rel="stylesheet" type='text/css' href="/stylesheets/main.css" >  -->
+    
+    <!-- <link rel='stylesheet' type='text/css' href='/stylesheets/main.css' /> -->
+    <!-- Scripts  -->
+    <script src="https://kit.fontawesome.com/9ff6827ca3.js" crossorigin="anonymous"></script>
+
+
+    </head>
+    <body style="background-color:rgb(172, 174, 180);background-size: cover; background-repeat: no-repeat; background-attachment: relative;">
+<% include partials/menu %>
+
+  <br>
+	<br>
+	<div class="container">
+      <table class="table table-responsive" style="width:100%">
+        <h2> Select the Candidate of your choice </h2>
+     <thead>
+         <tr>
+             <th>Candidate</th>
+             <th></th>
+         </tr>
+     </thead>
+     <tbody>
+     <form method="POST" action="/post-votes">
+         <tr>
+             <td>
+                 <div class="radio">
+                     <label><input type="radio" id='mike_bloomberg' name="optradio"> Mike Bloomberg</label>
+                 </div>
+             </td>
+             <td>
+             <div class="radiotext">
+                <img src="../public/images/MikeBloomberg.jpg" alt="MikeBloomberg" class="rounded-circle" style="width:80px;height:80px;">
+             </div>
+             </td>
+         </tr>
+         <tr>
+             <td>
+                 <div class="radio">
+                     <label><input type="radio" id='joe_biden' name="optradio"> Joe Biden</label>
+                </div>
+             </td>
+             <td>
+                 <div class="radiotext">
+                    <img src="../public/images/JoeBiden.jpeg" alt="JoeBiden" class="rounded-circle" style="width:80px;height:80px;">
+                 </div>
+             </td>
+         </tr>
+         <tr>
+             <td>
+                 <div class="radio">
+                     <label><input type="radio" id='pete_buttigieg' name="optradio"> Pete Buttigieg</label>
+                </div>
+             </td>
+             <td>
+                 <div class="radiotext">
+                    <img src="../public/images/PeteButtigieg.jpeg" alt="PeteButtigieg" class="rounded-circle" style="width:80px;height:80px;">
+                 </div>
+             </td>
+         </tr>
+         <tr>
+             <td>
+                 <div class="radio">
+                     <label><input type="radio" id='amy_klobuchar' name="optradio"> Amy Klobuchar</label>
+                </div>
+             </td>
+             <td>
+                 <div class="radiotext">
+                    <img src="../public/images/AmyKlobuchar.jpg" alt="AmyKlobuchar" class="rounded-circle" style="width:80px;height:80px;">
+                 </div>
+             </td>
+         </tr>
+         <tr>
+             <td>
+                 <div class="radio">
+                     <label><input type="radio" id='bernie_sanders' name="optradio"> Bernie Sanders</label>
+                </div>
+             </td>
+             <td>
+                 <div class="radiotext">
+                   <img src="../public/images/BernieSanders.png" alt="BernieSanders" class="rounded-circle" style="width:80px;height:80px;">
+                 </div>
+             </td>
+         </tr>
+         <tr>
+             <td>
+                 <div class="radio">
+                     <label><input type="radio" id='elizabeth_warren' name="optradio"> Elizabeth Warren</label>
+                </div>
+             </td>
+             <td>
+                 <div class="radiotext">
+                    <img src="../public/images/ElizabethWarren.jpeg" alt="ElizabethWarren" class="rounded-circle" style="width:80px;height:80px;">
+                 </div>
+             </td>
+         </tr>
+         </form>
+         </tbody>
+       </table>
+			<input type="submit" value="submit" onclick="location.href='dashboard'" class="btn btn-primary btn-block">
+		</form>
+		<br>
+	</div>
+
+<% include partials/footer %>
